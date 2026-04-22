@@ -37,6 +37,12 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+"Add line numbers
+set number
+
+"Add relative line numbers 
+set relativenumber
+
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
   au!
