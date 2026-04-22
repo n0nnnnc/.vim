@@ -19,6 +19,8 @@ endif
 
 " Pathogen
 execute pathogen#infect()
+" Use Dracula colorscheme
+colorscheme dracula
 
 " Get the defaults that most users want.
 source $VIMRUNTIME/defaults.vim
@@ -37,10 +39,10 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-"Add line numbers
+" Add line numbers
 set number
 
-"Add relative line numbers 
+" Add relative line numbers 
 set relativenumber
 
 " Put these in an autocmd group, so that we can delete them easily.
